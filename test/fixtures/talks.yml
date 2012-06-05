@@ -1,0 +1,25 @@
+# == Schema Information
+# Schema version: 20081014053040
+#
+# Table name: talks
+#
+#  id          :integer         not null, primary key
+#  paper_id    :integer
+#  attendee_id :integer
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+mark_hack:
+  paper: hack
+  attendee: mark
+
+mark_mb1:
+  paper: mb1
+  attendee: mark
+
+gary_mb2:
+  paper: mb2
+  attendee: gary

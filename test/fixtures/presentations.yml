@@ -1,0 +1,27 @@
+# == Schema Information
+# Schema version: 20081014053040
+#
+# Table name: presentations
+#
+#  id          :integer         not null, primary key
+#  title       :string(255)
+#  chair_id    :integer
+#  plenary     :boolean
+#  description :text
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+hacking:
+  title: How to hack your way out of a paper bag.
+  chair: mark
+  plenary: true
+  description: 
+
+macbooks:
+  title: Sessions about MacBooks
+  chair: steve
+  plenary: false
+  description: 

@@ -1,0 +1,42 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Popular Print Cultures - Past and Present, Local and Global</title>
+<meta name="description" content="Continuities and Innovations: Popular Print Cultures - Past and Present, Local and Global is an international conference to be held in Edmonton, Alberta, Canada from August 27-30, 2008. The conference and its associated popular culture festivals consider what most people read, here and elsewhere, now and in the past." />
+<meta name="keywords" content="conference, festival, university of alberta, popular culture, pop culture, comics, books, print, film, writing, publishing, literature, literary, popprint, popfest" />
+<%= stylesheet_link_tag "popprint" %>
+</head>
+
+<body>
+<div id="container">
+<div class="header">
+<img src="/images/HeaderImage.jpg" alt="Continuities and Innovations: Popular Print Cultures - Past and Present, Local and Global. University of Alberta, Edmonton, Canada. 27-30 August, 2008" /></div>
+
+<div class="graphic"></div>
+
+<div class="sidebar">
+<ul class="navigation">
+<li><%= link_to 'Home', :controller=>"public", :action=>"index" %></li>
+<li><%= link_to 'Call for Papers', :controller=>"public", :action=>"call_for_papers" %></li>
+<li><%= link_to 'Registration', :controller=>"public", :action=>"registration" %></li>
+<li><%= link_to 'Accommodation', :controller=>"public", :action=>"accommodation" %></li>
+<li><%= link_to 'Travel Information', :controller=>"public", :action=>"travel" %></li>
+<li><%= link_to 'Programme', :controller=>"public", :action=>"programme" %></li>
+<li><%= link_to 'Presentations', :controller=>"presentation" %></li>
+<li><%= link_to 'PopPrint Festival', :controller=>"public", :action=>"festival" %></li>
+<li><%= link_to 'Around Edmonton', :controller=>"public", :action=>"local" %></li>
+<li><%= link_to 'Contact Us', :controller=>"public", :action=>"contact" %></li>
+</ul>
+</div>
+
+<div class="content">
+
+<%= yield -%>
+
+</div>
+
+<div class="footer"><p>&nbsp;</p></div>
+</div>
+</body>
+</html>

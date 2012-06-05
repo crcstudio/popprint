@@ -1,0 +1,33 @@
+# == Schema Information
+# Schema version: 20081014053040
+#
+# Table name: papers
+#
+#  id              :integer         not null, primary key
+#  title           :string(255)
+#  description     :text
+#  keynote         :boolean
+#  presentation_id :integer
+#  created_at      :datetime
+#  updated_at      :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+hack:
+  title: How to hack your way out of a paper bag.
+  description: A talk on hacking for your everyday average Joe.
+  keynote: true
+  presentation: hacking
+
+mb1:
+  title: MacBooks and Me
+  description: I wish I had a macbook.
+  keynote: false
+  presentation: macbooks
+
+mb2:
+  title: I like MacBooks
+  description: MacBooks are cool
+  keynote: false
+  presentation: macbooks

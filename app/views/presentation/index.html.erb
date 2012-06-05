@@ -1,0 +1,21 @@
+<h4 class="pageheader">Presentations</h4>
+
+<hr />
+<table>
+<% for presentation in Presentation.all %>
+  <tr>
+    <th><%=h presentation.title %></th>
+    <th><%=h presentation.chair.name %></th>
+  </tr>
+		<% for paper in presentation.papers %>
+  <tr>
+	<td><%=h paper.title %></td>
+	<td><%=h paper.description %></td>
+	<td><%=h paper.title %></td>
+	<td><%=h paper.speakers[0].name %></td>
+  </tr>	
+		<% end %>
+
+<% end %>
+
+</table>

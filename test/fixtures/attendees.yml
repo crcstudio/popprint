@@ -1,0 +1,33 @@
+# == Schema Information
+# Schema version: 20081014053040
+#
+# Table name: attendees
+#
+#  id          :integer         not null, primary key
+#  name        :string(255)
+#  title       :string(255)
+#  institution :string(255)
+#  bio         :text
+#  created_at  :datetime
+#  updated_at  :datetime
+#
+
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+mark:
+  name: Mark Madsen
+  title: Mad Hacker
+  institution: Agile Animal
+  bio: Mark is cool.
+
+gary:
+  name: Gary Kelly
+  title: Conference and Festival Director
+  institution: University of Alberta
+  bio: 
+
+steve:
+  name: Steve Jobs
+  title: CEO
+  institution: Apple Inc.
+  bio: There is only one Steve Jobs.
